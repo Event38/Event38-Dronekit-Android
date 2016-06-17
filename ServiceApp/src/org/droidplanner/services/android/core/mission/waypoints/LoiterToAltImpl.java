@@ -51,7 +51,7 @@ public class LoiterToAltImpl extends SpatialCoordItem {
     public List<msg_mission_item> packMissionItem() {
         List<msg_mission_item> list = super.packMissionItem();
         msg_mission_item mavMsg = list.get(0);
-        mavMsg.command = MAV_CMD.MAV_CMD_NAV_LOITER_TURNS;
+        mavMsg.command = MAV_CMD.MAV_CMD_NAV_LOITER_TO_ALT;
         mavMsg.param1 = (float)heading;
         mavMsg.param2 = (float) radius;
         return list;
